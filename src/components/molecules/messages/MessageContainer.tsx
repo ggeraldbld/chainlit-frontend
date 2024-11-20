@@ -1,7 +1,7 @@
 import { MessageContext, defaultMessageContext } from 'contexts/MessageContext';
 import { memo } from 'react';
 
-import type { IAction, IMessageElement, IStep } from 'client-types/';
+import type { IAction, IMessageElement, IStep } from '@chainlit/react-client';
 import { IMessageContext } from 'types/messageContext';
 
 import { Messages } from './Messages';

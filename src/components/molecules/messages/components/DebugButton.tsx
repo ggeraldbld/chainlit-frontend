@@ -3,7 +3,7 @@ import Tooltip from '@mui/material/Tooltip';
 
 import DebugIcon from 'assets/debug';
 
-import type { IStep } from 'client-types/';
+import type { IStep } from '@chainlit/react-client';
 
 interface Props {
   debugUrl: string;

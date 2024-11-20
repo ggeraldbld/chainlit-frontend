@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 import { useUpload } from 'hooks/useUpload';
 
-import type { IAsk, IFileRef } from 'client-types/';
+import type { IAsk, IFileRef } from '@chainlit/react-client';
 
 const AskUploadChildButton = ({
   askUser,

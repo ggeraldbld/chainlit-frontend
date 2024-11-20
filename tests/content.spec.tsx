@@ -4,7 +4,7 @@ import { expect, it } from 'vitest';
 import { MessageContent } from 'components/molecules/messages/components/MessageContent';
 
 // Import the toBeInTheDocument function
-import type { ITextElement } from 'client-types/';
+import type { ITextElement } from '@chainlit/react-client';
 
 it('renders the message content', () => {
   const { getByText } = render(

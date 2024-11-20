@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 
 import { useLayoutMaxWidth } from 'hooks/useLayoutMaxWidth';
 
-import type { IMessageElement } from 'client-types/';
+import type { IMessageElement } from '@chainlit/react-client';
 
 import { Element } from './Element';
 

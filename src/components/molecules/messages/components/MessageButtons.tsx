@@ -8,7 +8,7 @@ import { ClipboardCopy } from 'components/atoms/ClipboardCopy';
 
 import { useIsDarkMode } from 'hooks/useIsDarkMode';
 
-import { type IStep } from 'client-types/';
+import { type IStep } from '@chainlit/react-client';
 
 import { DebugButton } from './DebugButton';
 import { FeedbackButtons } from './FeedbackButtons';

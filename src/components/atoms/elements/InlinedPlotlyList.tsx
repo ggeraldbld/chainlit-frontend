@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack';
 
-import type { IPlotlyElement } from 'client-types/';
+import type { IPlotlyElement } from '@chainlit/react-client';
 
 import { PlotlyElement } from './Plotly';
 

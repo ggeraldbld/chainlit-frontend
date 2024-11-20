@@ -15,7 +15,7 @@ import { MessageContent } from './components/MessageContent';
 
 import { useLayoutMaxWidth } from 'hooks/useLayoutMaxWidth';
 
-import { type IAction, type IMessageElement, type IStep } from 'client-types/';
+import { type IAction, type IMessageElement, type IStep } from '@chainlit/react-client';
 
 import { Messages } from './Messages';
 import Step from './Step';

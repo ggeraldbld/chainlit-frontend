@@ -6,8 +6,7 @@ import { Translator } from 'components/i18n';
 import { AuthLogin } from 'components/molecules/auth';
 
 import { useQuery } from 'hooks/query';
-
-import { ChainlitContext, useAuth } from 'client-types/*';
+import { ChainlitContext, useAuth } from '@chainlit/react-client';
 
 export default function Login() {
   const query = useQuery();

@@ -2,7 +2,7 @@ import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 import Stack from '@mui/material/Stack';
 
-import type { ITextElement } from 'client-types/';
+import type { ITextElement } from '@chainlit/react-client';
 
 import { TextElement } from './Text';
 

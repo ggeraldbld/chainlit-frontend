@@ -1,4 +1,4 @@
-import type { IImageElement } from 'client-types/';
+import type { IImageElement } from '@chainlit/react-client';
 
 import { ImageElement } from './Image';
 import { ListWithSize } from './ListWithSize';

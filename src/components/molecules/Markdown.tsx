@@ -21,7 +21,7 @@ import { InlineCode } from 'components/atoms/InlineCode';
 import { Code } from 'components/molecules/Code';
 import { ElementRef } from 'components/molecules/messages/components/ElementRef';
 
-import type { IMessageElement } from 'client-types/';
+import type { IMessageElement } from '@chainlit/react-client';
 
 import BlinkingCursor from './BlinkingCursor';
 

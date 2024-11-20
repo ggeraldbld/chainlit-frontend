@@ -4,7 +4,7 @@ import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import useTheme from '@mui/material/styles/useTheme';
 
-import { type IAudioElement } from 'client-types/';
+import { type IAudioElement } from '@chainlit/react-client';
 
 const AudioElement = ({ element }: { element: IAudioElement }) => {
   const theme = useTheme();

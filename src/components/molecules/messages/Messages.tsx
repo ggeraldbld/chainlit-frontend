@@ -3,7 +3,7 @@ import { memo, useContext } from 'react';
 
 import { useConfig } from '@chainlit/react-client';
 
-import { type IAction, type IMessageElement, type IStep } from 'client-types/';
+import { type IAction, type IMessageElement, type IStep } from '@chainlit/react-client';
 
 import MessageLoader from './Loader';
 import { Message } from './Message';

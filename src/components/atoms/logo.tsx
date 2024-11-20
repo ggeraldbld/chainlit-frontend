@@ -3,7 +3,7 @@ import { useRecoilValue } from 'recoil';
 
 import { settingsState } from 'state/settings';
 
-import { ChainlitContext } from 'client-types/*';
+import { ChainlitContext } from '@chainlit/react-client';
 
 interface Props {
   width?: number;

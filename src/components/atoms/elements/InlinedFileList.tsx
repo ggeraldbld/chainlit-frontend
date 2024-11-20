@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack';
 
-import type { IFileElement } from 'client-types/';
+import type { IFileElement } from '@chainlit/react-client';
 
 import { FileElement } from './File';
 

@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import Skeleton from '@mui/material/Skeleton';
 
-import { type IImageElement } from 'client-types/';
+import { type IImageElement } from '@chainlit/react-client';
 
 import { FrameElement } from './Frame';
 

@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 
-import type { IAudioElement } from 'client-types/';
+import type { IAudioElement } from '@chainlit/react-client';
 
 import { AudioElement } from './Audio';
 

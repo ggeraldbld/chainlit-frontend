@@ -2,7 +2,7 @@ import { Button, ButtonProps } from '@mui/material';
 
 import GithubIcon from 'assets/github';
 
-import { useConfig } from 'client-types/*';
+import { useConfig } from '@chainlit/react-client';
 
 interface Props extends ButtonProps {}
 

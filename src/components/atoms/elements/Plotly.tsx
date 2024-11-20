@@ -4,7 +4,7 @@ import { ErrorBoundary } from 'components/atoms/ErrorBoundary';
 
 import { useFetch } from 'hooks/useFetch';
 
-import { type IPlotlyElement } from 'client-types/';
+import { type IPlotlyElement } from '@chainlit/react-client';
 
 const Plot = lazy(() => import('react-plotly.js'));
 

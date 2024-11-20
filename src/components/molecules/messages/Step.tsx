@@ -10,7 +10,7 @@ import { Translator } from 'components/i18n';
 import ChevronDownIcon from 'assets/chevronDown';
 import ChevronUpIcon from 'assets/chevronUp';
 
-import type { IStep } from 'client-types/';
+import type { IStep } from '@chainlit/react-client';
 
 interface Props {
   step: IStep;

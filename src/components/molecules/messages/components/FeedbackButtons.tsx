@@ -25,7 +25,7 @@ import {
   ThumbUpIcon
 } from 'assets/thumbs';
 
-import type { IStep } from 'client-types/';
+import type { IStep } from '@chainlit/react-client';
 
 const ICON_SIZE = '16px';
 

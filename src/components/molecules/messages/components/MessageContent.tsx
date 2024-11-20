@@ -10,7 +10,7 @@ import { InlinedElements } from 'components/atoms/elements/InlinedElements';
 import { CURSOR_PLACEHOLDER } from 'components/molecules/BlinkingCursor';
 import { Markdown } from 'components/molecules/Markdown';
 
-import type { IMessageElement, IStep } from 'client-types/';
+import type { IMessageElement, IStep } from '@chainlit/react-client';
 
 const COLLAPSE_MIN_LINES = 50; // Set this to the maximum number of lines you want to display before collapsing
 const COLLAPSE_MIN_LENGTH = 3000; // Set this to the maximum number of characters you want to display before collapsing

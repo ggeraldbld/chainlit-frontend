@@ -2,7 +2,7 @@ import Link from '@mui/material/Link';
 
 import { Attachment } from 'components/atoms/Attachment';
 
-import { type IFileElement } from 'client-types/';
+import { type IFileElement } from '@chainlit/react-client';
 
 const FileElement = ({ element }: { element: IFileElement }) => {
   if (!element.url) {
