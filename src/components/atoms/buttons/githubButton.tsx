@@ -27,3 +27,7 @@ export default function GithubButton({ ...props }: Props) {
     </Button>
   );
 }
+
+const githubButton = GithubButton
+
+export { githubButton }

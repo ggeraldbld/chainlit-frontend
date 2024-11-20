@@ -47,3 +47,5 @@ export default function NewChatButton(props: IconButtonProps) {
     </Box>
   );
 }
+
+export { NewChatButton as newChatButton }

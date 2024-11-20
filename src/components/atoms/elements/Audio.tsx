@@ -30,4 +30,6 @@ const AudioElement = ({ element }: { element: IAudioElement }) => {
   );
 };
 
-export { AudioElement };
+const Audio = AudioElement
+
+export { AudioElement, Audio };

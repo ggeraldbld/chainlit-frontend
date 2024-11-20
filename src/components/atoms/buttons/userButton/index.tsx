@@ -25,3 +25,6 @@ export default function UserButton() {
     </>
   );
 }
+
+const index = UserButton;
+export { index };

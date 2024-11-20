@@ -47,4 +47,4 @@ const MessageAvatar = ({ author, hide }: Props) => {
   );
 };
 
-export { MessageAvatar };
+export { MessageAvatar, MessageAvatar as Avatar  };

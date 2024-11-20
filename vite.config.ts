@@ -3,10 +3,29 @@ import path from 'path';
 import { defineConfig } from 'vite';
 import svgr from 'vite-plugin-svgr';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths(), svgr()],
+  plugins: [react(), tsconfigPaths(), svgr(), dts({ include: ['./src/components'] })],
+  build: {
+    lib: {
+      entry: './src/index.ts',
+      name: 'ChainlitFrontend',
+      // formats: ['es', 'cjs', 'umd'],
+      formats: ['es'],
+      fileName: (format) => `chainlit-frontend.${format}.js`,
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM',
+        },
+      },
+    },
+  },
   resolve: {
     alias: {
       // To prevent conflicts with packages in @chainlit/react-components, we need to specify the resolution paths for these dependencies.

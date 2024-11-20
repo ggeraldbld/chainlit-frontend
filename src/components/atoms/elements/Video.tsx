@@ -18,4 +18,6 @@ const VideoElement = ({ element }: { element: IVideoElement }) => {
   );
 };
 
-export { VideoElement };
+const Video = VideoElement;
+
+export { VideoElement, Video };

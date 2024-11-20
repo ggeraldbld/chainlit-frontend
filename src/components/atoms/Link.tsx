@@ -16,4 +16,6 @@ const Link = ({ children, ...rest }: LinkProps): JSX.Element => {
   );
 };
 
+export { Link }
+
 export default Link;

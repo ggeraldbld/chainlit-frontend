@@ -34,3 +34,7 @@ export default function MessageLoader({ show }: Props) {
     </Fade>
   );
 }
+
+const Loader = MessageLoader;
+
+export { Loader };

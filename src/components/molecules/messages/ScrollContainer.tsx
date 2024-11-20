@@ -54,3 +54,5 @@ export default function ScrollContainer({
     </Box>
   );
 }
+
+export { ScrollContainer };

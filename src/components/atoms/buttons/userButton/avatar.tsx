@@ -27,3 +27,7 @@ export default function UserAvatar(props: IconButtonProps) {
     </IconButton>
   );
 }
+
+const avatar = UserAvatar;
+
+export { avatar }

@@ -53,3 +53,5 @@ export default function NewChatDialog({
     </Dialog>
   );
 }
+
+export { NewChatDialog as newChatDialog }

@@ -39,4 +39,6 @@ const TextElement = ({ element }: Props) => {
   );
 };
 
-export { TextElement };
+const Text = TextElement;
+
+export { TextElement, Text };

@@ -17,4 +17,6 @@ const FrameElement = ({ children }: { children: React.ReactNode }) => (
   </Box>
 );
 
-export { FrameElement };
+const Frame = FrameElement
+
+export { FrameElement, Frame };

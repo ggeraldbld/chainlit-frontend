@@ -24,4 +24,6 @@ const FileElement = ({ element }: { element: IFileElement }) => {
   );
 };
 
-export { FileElement };
+const File = FileElement
+
+export { FileElement, File };

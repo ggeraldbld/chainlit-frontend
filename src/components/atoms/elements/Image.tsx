@@ -100,4 +100,6 @@ const ImageElement = ({ element }: Props) => {
   );
 };
 
-export { ImageElement };
+const Image = ImageElement
+
+export { ImageElement, Image };

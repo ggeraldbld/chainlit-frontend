@@ -152,3 +152,6 @@ export default function UserMenu({ anchorEl, open, handleClose }: Props) {
     </Menu>
   );
 }
+
+const menu = UserMenu;
+export { menu };

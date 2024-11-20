@@ -122,4 +122,6 @@ const Attachments = (): JSX.Element => {
   );
 };
 
-export { Attachments };
+const attachments = Attachments;
+
+export { Attachments, attachments };

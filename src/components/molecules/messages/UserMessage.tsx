@@ -131,3 +131,5 @@ export default function UserMessage({
     </Box>
   );
 }
+
+export { UserMessage }

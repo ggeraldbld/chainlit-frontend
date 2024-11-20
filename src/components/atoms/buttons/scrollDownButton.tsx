@@ -31,3 +31,7 @@ export default function ScrollDownButton({ onClick }: Props) {
     </IconButton>
   );
 }
+
+const scrollDownButton = ScrollDownButton
+
+export { scrollDownButton }

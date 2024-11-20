@@ -30,3 +30,7 @@ export default function CircularProgressIconButton({
     </div>
   );
 }
+
+const progressIconButton = CircularProgressIconButton
+
+export { progressIconButton }

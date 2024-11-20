@@ -170,3 +170,7 @@ export default function ChatProfiles() {
     </>
   );
 }
+
+const chatProfiles = ChatProfiles;
+
+export { chatProfiles }

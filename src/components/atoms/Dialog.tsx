@@ -43,4 +43,6 @@ const Dialog = ({ actions, content, title, ...rest }: DialogProps) => {
   );
 };
 
+export { Dialog }
+
 export default Dialog;

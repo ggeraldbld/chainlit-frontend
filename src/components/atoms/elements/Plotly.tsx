@@ -57,4 +57,6 @@ const PlotlyElement = (props: Props) => {
   );
 };
 
-export { PlotlyElement };
+const Plotly = PlotlyElement
+
+export { PlotlyElement, Plotly };

@@ -22,4 +22,6 @@ const PDFElement = ({ element }: Props) => {
   );
 };
 
-export { PDFElement };
+const PDF = PDFElement;
+
+export { PDFElement, PDF };

@@ -117,3 +117,5 @@ export default function FeedbackSelect() {
     </>
   );
 }
+
+export { FeedbackSelect };

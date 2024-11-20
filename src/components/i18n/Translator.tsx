@@ -43,4 +43,6 @@ export const useTranslation = () => {
   };
 };
 
+export { Translator }
+
 export default Translator;

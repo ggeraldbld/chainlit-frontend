@@ -55,4 +55,6 @@ const DataframeElement = ({ element }: Props) => {
   );
 };
 
-export { DataframeElement };
+const Dataframe = DataframeElement;
+
+export { DataframeElement, Dataframe };
