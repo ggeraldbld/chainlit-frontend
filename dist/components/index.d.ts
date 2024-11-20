@@ -88,6 +88,8 @@ export { Task } from './molecules/tasklist/Task';
 export { TaskList } from './molecules/tasklist/TaskList';
 export { TaskStatusIcon } from './molecules/tasklist/TaskStatusIcon';
 export { container } from './organisms/chat/Messages/container';
+export { Chat } from './organisms/chat/index';
+export { AudioPresence } from './organisms/chat/inputBox/AudioPresence';
 export { SubmitButton } from './organisms/chat/inputBox/SubmitButton';
 export { OpenSideBarMobileButton } from './organisms/sidebar/OpenSideBarMobileButton';
 export { DeleteThreadButton } from './organisms/sidebar/threadHistory/DeleteThreadButton';

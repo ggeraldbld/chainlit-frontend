@@ -7,4 +7,4 @@ interface Props {
     barSpacing: number;
 }
 export default function AudioPresence({ type, height, width, barCount, barSpacing }: Props): JSX.Element;
-export {};
+export { AudioPresence };

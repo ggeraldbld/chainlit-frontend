@@ -121,3 +121,5 @@ export default function AudioPresence({
     </Box>
   );
 }
+
+export { AudioPresence }

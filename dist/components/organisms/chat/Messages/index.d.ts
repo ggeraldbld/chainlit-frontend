@@ -1,3 +1,3 @@
 declare const Messages: () => JSX.Element;
-export { Messages as index };
+export { Messages };
 export default Messages;
