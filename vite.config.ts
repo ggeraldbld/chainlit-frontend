@@ -13,7 +13,7 @@ export default defineConfig({
       entry: './src/index.ts',
       name: 'ChainlitFrontend',
       // formats: ['es', 'cjs', 'umd'],
-      formats: ['es'],
+      formats: ['es', 'cjs'],
       fileName: (format) => `chainlit-frontend.${format}.js`,
     },
     rollupOptions: {
