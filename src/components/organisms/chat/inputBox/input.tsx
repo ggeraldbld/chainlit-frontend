@@ -205,9 +205,7 @@ const Input = memo(
           multiline
           variant="standard"
           autoComplete="false"
-          placeholder={t(
-            'components.organisms.chat.inputBox.input.placeholder'
-          )}
+          placeholder="Type your message here..."
           disabled={disabled}
           onChange={(e) => setValue(e.target.value)}
           onKeyDown={handleKeyDown}

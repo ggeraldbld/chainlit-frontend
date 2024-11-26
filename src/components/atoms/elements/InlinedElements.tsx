@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack';
 
-import type { ElementType, IMessageElement } from '@chainlit/react-client';
+import type { ElementType } from '@chainlit/react-client';
 
 import { InlinedAudioList } from './InlinedAudioList';
 import { InlinedDataframeList } from './InlinedDataframeList';
@@ -10,6 +10,7 @@ import { InlinedPDFList } from './InlinedPDFList';
 import { InlinedPlotlyList } from './InlinedPlotlyList';
 import { InlinedTextList } from './InlinedTextList';
 import { InlinedVideoList } from './InlinedVideoList';
+import { IMessageElement } from '../../../../libs/react-client/src';
 
 interface Props {
   elements: IMessageElement[];

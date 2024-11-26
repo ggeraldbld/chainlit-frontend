@@ -2,7 +2,7 @@ import { DataGrid } from '@mui/x-data-grid';
 
 import { useFetch } from 'hooks/useFetch';
 
-import { type IDataframeElement } from '@chainlit/react-client';
+import type { IDataframeElement } from '../../../../libs/react-client/src/types';
 
 interface Props {
   element: IDataframeElement;

@@ -7,24 +7,45 @@ import dts from 'vite-plugin-dts';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tsconfigPaths(), svgr(), dts({ include: ['./src/components'] })],
+  plugins: [
+    react(),
+    tsconfigPaths(),
+    svgr(),
+    dts({
+      include: ['./src/components'],
+      exclude: ['./src/App.tsx'],
+      outDir: 'dist'
+    })
+  ],
   build: {
     lib: {
-      entry: './src/index.ts',
+      entry: './src/components/index.ts',
       name: 'ChainlitFrontend',
-      // formats: ['es', 'cjs', 'umd'],
       formats: ['es', 'cjs'],
-      fileName: (format) => `chainlit-frontend.${format}.js`,
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: [
+        'react', 
+        'react-dom',
+        /^@mui\/.*/,
+        /^@emotion\/.*/,
+        'recoil',
+        'formik',
+        'react-router-dom'
+      ],
       output: {
         globals: {
           react: 'React',
-          'react-dom': 'ReactDOM',
+          'react-dom': 'ReactDOM'
         },
-      },
+        entryFileNames: (chunkInfo) => {
+          return `[name]${chunkInfo.name === 'index' ? '' : '.[hash]'}.${chunkInfo.format === 'es' ? 'js' : 'cjs'}`
+        }
+      }
     },
+    sourcemap: true,
+    target: 'esnext'
   },
   resolve: {
     alias: {
@@ -47,7 +68,8 @@ export default defineConfig({
       formik: path.resolve(__dirname, './node_modules/formik'),
       'usehooks-ts': path.resolve(__dirname, './node_modules/usehooks-ts'),
       lodash: path.resolve(__dirname, './node_modules/lodash'),
-      recoil: path.resolve(__dirname, './node_modules/recoil')
+      recoil: path.resolve(__dirname, './node_modules/recoil'),
+      assets: path.resolve(__dirname, './src/assets'),
     }
   }
 });

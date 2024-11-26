@@ -15,11 +15,15 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
+    "declaration": true,
+    "declarationDir": "./dist",
     "jsx": "react-jsx",
     "types": ["node"],
     "paths": {
       "client-types/*": ["../../libs/react-client/dist"],
+      "@chainlit/frontend": ["./src"],
+      "@chainlit/frontend/*": ["./src/*"]
     }
   },
   "include": ["./src"],

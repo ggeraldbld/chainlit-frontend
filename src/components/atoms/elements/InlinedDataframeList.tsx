@@ -1,6 +1,6 @@
 import Stack from '@mui/material/Stack';
 
-import type { IDataframeElement } from '@chainlit/react-client';
+import type { IDataframeElement } from '../../../../libs/react-client/src/types';
 
 import { DataframeElement } from './Dataframe';
 

@@ -3,10 +3,17 @@
   "private": false,
   "version": "0.0.2",
   "type": "module",
-  "main": "dist/chainlit-frontend.cjs.js",
-  "module": "dist/chainlit-frontend.es.js",
-  "types": "dist/components/index.d.ts",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/src/components/index.d.ts",
   "files": ["dist"],
+  "exports": {
+    ".": {
+      "types": "./dist/src/components/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js"
+    }
+  },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "vite",
