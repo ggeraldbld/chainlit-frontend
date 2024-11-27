@@ -12,7 +12,11 @@ import { i18nSetupLocalization } from './i18n';
 
 i18nSetupLocalization();
 
-const App = ({ apiClient }: { apiClient: ChainlitAPI }) => {
+export type TAppProps = {
+  apiClient: ChainlitAPI;
+};
+
+const App = ({ apiClient }: TAppProps) => {
   return (
     <ChainlitContext.Provider value={apiClient}>
       <RecoilRoot>
@@ -22,7 +26,7 @@ const App = ({ apiClient }: { apiClient: ChainlitAPI }) => {
   );
 };
 
-const lifecycles = singleSpaReact({
+const lifecycles = singleSpaReact<TAppProps>({
   React,
   ReactDOM,
   rootComponent: App,
