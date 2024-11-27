@@ -20,6 +20,9 @@ import { type IAction, type IMessageElement, type IStep } from '@chainlit/react-
 import { Messages } from './Messages';
 import Step from './Step';
 import UserMessage from './UserMessage';
+import { i18nSetupLocalization } from 'i18n';
+
+i18nSetupLocalization();
 
 interface Props {
   message: IStep;

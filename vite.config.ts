@@ -39,9 +39,6 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDOM'
         },
-        entryFileNames: (chunkInfo) => {
-          return `[name]${chunkInfo.name === 'index' ? '' : '.[hash]'}.${chunkInfo.format === 'es' ? 'js' : 'cjs'}`
-        }
       }
     },
     sourcemap: true,

@@ -29,3 +29,5 @@ const MessageContainer = memo(
 );
 
 export { MessageContainer };
+
+export default MessageContainer;
