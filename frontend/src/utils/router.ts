@@ -3,7 +3,7 @@ const getRouterBasename = () => {
   if (ogTitleMeta && typeof ogTitleMeta.getAttribute('content') === 'string') {
     return ogTitleMeta.getAttribute('content')!;
   } else {
-    return '';
+    return '/chat';
   }
 };
 

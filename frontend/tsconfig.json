@@ -19,7 +19,7 @@
     "jsx": "react-jsx",
     "types": ["node"],
     "paths": {
-      "client-types/*": ["../../libs/react-client/dist"],
+      "client-types/*": ["../node_modules/@chainlit/react-client/dist"],
     }
   },
   "include": ["./src"],

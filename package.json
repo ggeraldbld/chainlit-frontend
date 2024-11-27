@@ -1,4 +1,5 @@
 {
+  "name": "@chainlit/frontend",
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/react": "^18.2.15",
@@ -25,7 +26,9 @@
     "formatUi": "cd frontend && pnpm run format",
     "lintPython": "cd backend && poetry run dmypy run --timeout 600 -- chainlit/ tests/",
     "formatPython": "black `git ls-files | grep '.py$'` && isort --profile=black .",
-    "buildUi": "cd libs/react-client && pnpm run build && cd ../copilot && pnpm run build && cd ../../frontend && pnpm run build"
+    "copy:frontend-dist": "cp -r frontend/dist dist",
+    "buildUi": "cd libs/react-client && pnpm run build && cd ../copilot && pnpm run build && cd ../../frontend && pnpm run build",
+    "postinstall": "pnpm run buildUi && pnpm run copy:frontend-dist"
   },
   "pnpm": {
     "overrides": {
