@@ -30,5 +30,22 @@ export default defineConfig({
       lodash: path.resolve(__dirname, './node_modules/lodash'),
       recoil: path.resolve(__dirname, './node_modules/recoil')
     }
+  },
+  build: {
+    lib: {
+      entry: 'src/mainApp.tsx',
+      formats: ['es'],
+      name: 'ChainlitFrontend',
+      fileName: 'ChainlitFrontend'
+    },
+    rollupOptions: {
+      external: ['react', 'react-dom'],
+      output: {
+        globals: {
+          react: 'React',
+          'react-dom': 'ReactDOM'
+        }
+      }
+    }
   }
 });
