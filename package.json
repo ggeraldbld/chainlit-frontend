@@ -27,9 +27,8 @@
     "formatUi": "cd frontend && pnpm run format",
     "lintPython": "cd backend && poetry run dmypy run --timeout 600 -- chainlit/ tests/",
     "formatPython": "black `git ls-files | grep '.py$'` && isort --profile=black .",
-    "copy:frontend-dist": "cp -r frontend/dist dist",
     "buildUi": "cd libs/react-client && pnpm run build && cd ../copilot && pnpm run build && cd ../../frontend && pnpm run build",
-    "postinstall": "pnpm run buildUi && pnpm run copy:frontend-dist"
+    "build:frontend": "cd ./frontend && pnpm run build && cd ../ && cp -r ./frontend/dist dist"
   },
   "pnpm": {
     "overrides": {
