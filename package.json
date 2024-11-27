@@ -19,7 +19,6 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "test": "pnpm exec ts-node ./cypress/support/e2e.ts",
     "test:ui": "cd frontend && pnpm test",
     "prepare": "husky",
