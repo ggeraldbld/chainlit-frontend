@@ -7,7 +7,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useAudio } from '@chainlit/react-client';
 
 // import UserButton from 'components/atoms/buttons/userButton';
-import { Logo } from 'components/atoms/logo';
+// import { Logo } from 'components/atoms/logo';
 import ChatProfiles from 'components/molecules/chatProfiles';
 import NewChatButton from 'components/molecules/newChatButton';
 
@@ -15,6 +15,8 @@ import { settingsState } from 'state/settings';
 
 import AudioPresence from './chat/inputBox/AudioPresence';
 import { OpenSideBarMobileButton } from './sidebar/OpenSideBarMobileButton';
+
+const Logo = (_props: React.HTMLAttributes<HTMLImageElement>) => null;
 
 const Header = memo(() => {
   const isMobile = useMediaQuery('(max-width: 66rem)');
