@@ -10,7 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useAuth, useConfig } from '@chainlit/react-client';
 
 import GithubButton from 'components/atoms/buttons/githubButton';
-import { Logo } from 'components/atoms/logo';
+// import { Logo } from 'components/atoms/logo';
 import ReadmeButton from 'components/organisms/readmeButton';
 
 import { settingsState } from 'state/settings';
@@ -69,7 +69,7 @@ const SideBar = () => {
           }
         }}
       >
-        <Stack
+        {/* <Stack
           sx={{
             flexDirection: 'row',
             justifyContent: 'space-between',
@@ -79,7 +79,7 @@ const SideBar = () => {
           }}
         >
           <Logo style={{ maxHeight: '25px' }} />
-        </Stack>
+        </Stack> */}
         {enableHistory ? (
           <ThreadHistory />
         ) : (

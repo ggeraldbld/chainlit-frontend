@@ -6,7 +6,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import { useAudio } from '@chainlit/react-client';
 
-import UserButton from 'components/atoms/buttons/userButton';
+// import UserButton from 'components/atoms/buttons/userButton';
 import { Logo } from 'components/atoms/logo';
 import ChatProfiles from 'components/molecules/chatProfiles';
 import NewChatButton from 'components/molecules/newChatButton';
@@ -65,7 +65,7 @@ const Header = memo(() => {
       <Box />
       <Stack direction="row" alignItems="center">
         <NewChatButton />
-        <UserButton />
+        {/* <UserButton /> */}
       </Stack>
     </Box>
   );
