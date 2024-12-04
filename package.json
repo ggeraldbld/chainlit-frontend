@@ -1,6 +1,6 @@
 {
   "name": "@chainlit/frontend",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "module": "./dist/ChainlitFrontend.js",
   "types": "./dist/ChainlitFrontend.d.ts",
   "files": ["dist"],
