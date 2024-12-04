@@ -1,6 +1,19 @@
 import 'react';
 import 'react-dom';
+import 'recoil';
 
-import { m as p, b as r, A as s, c as u } from './ChainlitFrontend-D6NIyKXq.js';
+import {
+  A as e,
+  s as n,
+  m as p,
+  b as r,
+  c as u
+} from './ChainlitFrontend-BQjC3Dnz.js';
 
-export { r as bootstrap, s as default, p as mount, u as unmount };
+export {
+  r as bootstrap,
+  e as default,
+  p as mount,
+  n as stateEventsKey,
+  u as unmount
+};
