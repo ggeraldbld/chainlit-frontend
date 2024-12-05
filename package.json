@@ -1,9 +1,9 @@
 {
-  "name": "@chainlit/frontend",
+  "name": "chainlit-frontend",
   "version": "0.0.3",
   "module": "./dist/ChainlitFrontend.js",
   "types": "./dist/ChainlitFrontend.d.ts",
-  "files": ["dist"],
+  "files": ["dist/*", "LICENSE"],
   "exports": {
     ".": {
       "types": "./dist/ChainlitFrontend.d.ts",

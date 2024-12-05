@@ -1,0 +1,9 @@
+backend/
+cypress/
+frontend/
+images/
+libs/
+src/
+tests/
+*.md
+*.log
