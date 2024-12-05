@@ -60,6 +60,7 @@ const SideBar = () => {
             padding: '0px 4px',
             backgroundImage: 'none',
             borderRight: 'none',
+            pt: 2,
             px: 2,
             boxSizing: 'border-box',
             boxShadow: (theme) =>
